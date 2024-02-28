@@ -1,0 +1,1493 @@
+{
+    "description": "Layer - l-ctrl-layer",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "optional": [
+                        "fn"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "l-ctrl-layer",
+                        "value": 1
+                    }
+                }
+            ],
+            "to_after_key_up": [
+                {
+                    "set_variable": {
+                        "name": "l-ctrl-layer",
+                        "value": 0
+                    }
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "key_code": "l"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "a",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "a",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "b",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "b",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "c",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "c",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "d",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "e",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "e",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "f",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "f",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "g",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "g",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "h",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "i",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "i",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "j",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "k",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "m",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "m",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "n",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "n",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "o",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "o",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "p",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "p",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "q",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "r",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "r",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "s",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "s",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "t",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "t",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "u",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "u",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "v",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "v",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "w",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "x",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "y",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "y",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "z",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "z",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "1",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "1",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "2",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "2",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "3",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "3",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "4",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "4",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "5",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "5",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "6",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "6",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "7",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "7",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "8",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "8",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "9",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "9",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "0",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "0",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "up_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "down_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "return_or_enter",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "return_or_enter",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "escape",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "escape",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "delete_or_backspace",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "delete_forward",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "tab",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "hyphen",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "hyphen",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "equal_sign",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "equal_sign",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "open_bracket",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "open_bracket",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "close_bracket",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "close_bracket",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "backslash",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "backslash",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "semicolon",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "semicolon",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "quote",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "quote",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "grave_accent_and_tilde",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "comma",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "comma",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "period",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "period",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "slash",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "slash",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "l-ctrl-layer",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": {
+                    "mandatory": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "spacebar",
+                    "modifiers": [
+                        "right_control"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
