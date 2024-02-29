@@ -4,18 +4,11 @@ Here are some Karabiner-element actions I've put together.
 
 (I wouldn't use those in the folders "layer" and "simlayer" - so there's two relevant actions here.)
 
-## Home row mods
-
-(More on home row mods in [this excellent guide](https://precondition.github.io/home-row-mods).)
-
-There's currently two versions of the home row mod action. They're both with the mod order that's on regular keyboards (and mirrored on the other side):
-
-- **A = Shift**
-- **S = Control**
-- **D = Option/Alt**
-- **F = Commnd/Win**
-
-[There's one version with just those mods](home_row_mods-s-ct-o-c.json), and [one version with Meh (Shift+Control+Option) on R and U](home_row_mods-s-ct-o-c+r_u-meh.json).
+- [Caps lock and quote (hold) -> Hyperkey](caps+quote_hyper.json)
+- [R (hold) and U (hold) -> Meh](r_u-meh.json)
+- **Home row mods**
+  - [Shift - Control - Option - Command](home_row_mods-s-ct-o-c.json)
+  - [Control - Option - Shift - Command](home_row_mods-ct-o-s-c.json)
 
 ## How to add to Karabiner
 
