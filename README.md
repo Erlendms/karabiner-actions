@@ -30,6 +30,11 @@ Let's say you put this on 200 ms (which is pretty normal, but I like it lower). 
 - Input: **Hold _just_ F for ≥200 ms** | Output: **Command**
 - Input: **Hold F, then hit A _before_ 200 ms** | Output: **F** **A**
 - Input: **Hold F, then hit A _after_ 200 ms** | Output: **Command + A**
+- Input: **Hold F, then hit C _after_ 200 ms, then V** Output: **Command + C**, **Command + V**
+
+If you set the number higher, you will almost never get any unintended modifiers. However, when activating stuff like **Command + A**, you would have to wait a bit, after holding **F**, before hitting **A**. Otherwise it would just write `fa`.
+
+If you set it lower, you don't have to wait. But if you type fast, and want to write the word "Fast", you might do **Command + A** before getting to **S** and **T**. Experiemnt, to find your sweet spot!
 
 Holding several modifiers also works - but you have to start holding them at the same time. `simultaneous_threshold_milliseconds` is how strictly you have to hit them at the same time.
 
