@@ -12,7 +12,7 @@ There's currently two versions of the home row action. They're both with the mod
 There's one version with just those mods, and one version with Meh (Shift+Control+Option) on R and U.
 
 ## How to add to Karabiner
-![](images/Karabiner-add-actions.png)
+![](images/Karabiner-add-action.png)
 ### But remember to change settings!
 There's no thresholds added to the actions, so that you can you can adjust yourself. But one value is pretty high as default, so take a look here. 👇🏻
 ![](images/Karabiner-settings.png)
