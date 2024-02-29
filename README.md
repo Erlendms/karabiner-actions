@@ -15,4 +15,6 @@ There's one version with just those mods, and one version with Meh (Shift+Contro
 ![](images/Karabiner-add-action.png)
 ### But remember to change settings!
 There's no thresholds added to the actions, so that you can you can adjust yourself. But one value is pretty high as default, so take a look here. 👇🏻
+
+Test
 ![](images/Karabiner-settings.png)
