@@ -6,6 +6,8 @@ Here are some Karabiner-element actions I've put together.
 
 ## Home row mods
 
+(More on home row mods in [this excellent guide](https://precondition.github.io/home-row-mods).)
+
 There's currently two versions of the home row mod action. They're both with the mod order that's on regular keyboards (and mirrored on the other side):
 
 - **A = Shift**
@@ -26,10 +28,10 @@ There's no thresholds added to the actions, so that you can adjust yourself. But
 
 Let's say you put this on 200 ms (which is pretty normal, but I like it lower). Here's some scenarios then:
 
-- Input: **Hold _just_ F for <200 ms**
+- Input: **Click (just) F and release it _before_ 200 ms**
   - Output: **F**
-- Input: **Hold _just_ F for ≥200 ms**
-  - Output: **Command**
+- Input: **Click (just) F and release it _after_ 200 ms**
+  - Output: **Command click**
 - Input: **Hold F, then hit A _before_ 200 ms**
   - Output: **F** **A**
 - Input: **Hold F, then hit A _after_ 200 ms**
