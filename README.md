@@ -26,15 +26,22 @@ There's no thresholds added to the actions, so that you can adjust yourself. But
 
 Let's say you put this on 200 ms (which is pretty normal, but I like it lower). Here's some scenarios then:
 
-- Input: **Hold _just_ F for <200 ms** | Output: **F**
-- Input: **Hold _just_ F for ≥200 ms** | Output: **Command**
-- Input: **Hold F, then hit A _before_ 200 ms** | Output: **F** **A**
-- Input: **Hold F, then hit A _after_ 200 ms** | Output: **Command + A**
-- Input: **Hold F, then hit C _after_ 200 ms, then V** Output: **Command + C**, **Command + V**
+- Input: **Hold _just_ F for <200 ms**
+  - Output: **F**
+- Input: **Hold _just_ F for ≥200 ms**
+  - Output: **Command**
+- Input: **Hold F, then hit A _before_ 200 ms**
+  - Output: **F** **A**
+- Input: **Hold F, then hit A _after_ 200 ms**
+  - Output: **Command + A**
+- Input: **Hold F, then hit C _after_ 200 ms, then V**
+  - Output: **Command + C**, **Command + V**
 
-If you set the number higher, you will almost never get any unintended modifiers. However, when activating stuff like **Command + A**, you would have to wait a bit, after holding **F**, before hitting **A**. Otherwise it would just write `fa`.
+If you set the number higher, you will almost never get any unintended modifiers. However, when activating stuff like **Command + A**, you would have to wait a bit, after holding **F**, before hitting **A**. Otherwise it would just write `fa`. But you can hold F for as long as you want, before hitting A. You missed your chance to type the letter, and if you don't hit any other keys, it will just me a Command click. (So if you're on windows, this means you can hit the windows key by holding for more than 200 ms.)
 
 If you set it lower, you don't have to wait. But if you type fast, and want to write the word "Fast", you might do **Command + A** before getting to **S** and **T**. Experiemnt, to find your sweet spot!
+
+---
 
 Holding several modifiers also works - but you have to start holding them at the same time. `simultaneous_threshold_milliseconds` is how strictly you have to hit them at the same time.
 
