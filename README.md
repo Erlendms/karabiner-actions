@@ -10,7 +10,7 @@ There's currently two versions of the home row mod action. They're both with the
 * **D = Option/Alt**
 * **F = Commnd/Win**
 
-There's one version with just those mods, and one version with Meh (Shift+Control+Option) on R and U.
+[There's one version with just those mods](home_row_mods-s-ct-o-c.json), and [one version with Meh (Shift+Control+Option) on R and U](home_row_mods-s-ct-o-c+r_u-meh.json).
 
 ## How to add to Karabiner
 ![First click "Complex Modifications", then "Add your own rule". Then copy and paste everything from the .json, and hit save.](images/Karabiner-add-action.png)
