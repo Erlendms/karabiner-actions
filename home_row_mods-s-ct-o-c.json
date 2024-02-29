@@ -128,46 +128,6 @@
                 }
             ],
             "type": "basic"
-        },
-        {
-            "from": {
-                "key_code": "e"
-            },
-            "to_if_alone": [
-                {
-                    "key_code": "e"
-                }
-            ],
-            "to_if_held_down": [
-                {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                        "left_option",
-                        "left_control"
-                    ]
-                }
-            ],
-            "type": "basic"
-        },
-        {
-            "from": {
-                "key_code": "i"
-            },
-            "to_if_alone": [
-                {
-                    "key_code": "i"
-                }
-            ],
-            "to_if_held_down": [
-                {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                        "left_option",
-                        "left_control"
-                    ]
-                }
-            ],
-            "type": "basic"
         }
     ]
 }
