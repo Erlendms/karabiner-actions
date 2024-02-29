@@ -1,0 +1,34 @@
+{
+  "description": "Caps + Quote -> Hyper",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "caps_lock"
+      },
+      "to": [
+        {
+          "key_code": "left_command",
+          "modifiers": ["option", "control", "shift"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "quote"
+      },
+      "to_if_alone": [
+        {
+          "key_code": "quote"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "key_code": "right_shift",
+          "modifiers": ["right_control", "right_option", "right_command"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
