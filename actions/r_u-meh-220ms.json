@@ -1,0 +1,73 @@
+{
+  "description": "R_U = Meh - 220 ms",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "r"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 220
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "r"
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "r"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "left_shift",
+          "modifiers": ["left_option", "left_control"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "u"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 220
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "u"
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "u"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_shift",
+          "modifiers": ["right_option", "right_control"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}

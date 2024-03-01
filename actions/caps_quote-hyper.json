@@ -1,0 +1,88 @@
+{
+  "description": "Caps + Quote -> Hyper",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "caps_lock"
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 350,
+        "basic.to_if_held_down_threshold_milliseconds": 300
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "sticky_modifier": {
+              "left_shift": "toggle"
+            }
+          },
+          {
+            "sticky_modifier": {
+              "left_control": "toggle"
+            }
+          },
+          {
+            "sticky_modifier": {
+              "left_option": "toggle"
+            }
+          },
+          {
+            "sticky_modifier": {
+              "left_command": "toggle"
+            }
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "caps_lock"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "left_shift",
+          "modifiers": ["left_command", "left_option", "left_control"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "quote"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "quote"
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "quote"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_shift",
+          "modifiers": ["right_command", "right_option", "right_control"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
