@@ -96,9 +96,11 @@ But I have two versions with the same order as regular keyboards, so:
 
 [One regular version](actions/home_row_mods-s-ct-o-c.json), and one version [with sticky shifts](actions/home_row_mods-s-ct-o-c.json).
 
-Sticky shifts mean that if you hold `A` or `semicolon` and then click something else, you'll get the shifted version _even_ if was before 200 ms. This mimics the _Permissive Hold_ function of QMK - but not perfectly (as that's not possible in Karabiner-Elements). The upside is that you don't need to wait for shifts - but it'll lead to more unintended activations, \*_and you can't keep holding and get more shifts afterwards_.
+Sticky shifts mean that if you hold `A` or `semicolon` and then click something else, you'll get the shifted version _even_ if was before 200 ms. This mimics the _Permissive Hold_ function of QMK - but not perfectly (as that's not possible in Karabiner-Elements). The upside is that you don't need to wait for shifts - but it'll lead to more unintended activations, _and you can't keep holding and get more shifts afterwards_.
 
-Holding several modifiers also works - but you have to start holding them at the same time. `simultaneous_threshold_milliseconds` is how strictly you have to hit them at the same time.
+A better solultion, if you really want fast shifts, is to just have a lower threshold on just those keys.
+
+**Holding several modifiers also works, btw!** But you have to start holding them at the same time. `simultaneous_threshold_milliseconds` is how strictly you have to hit them at the same time.
 
 Good luck! 🤗
 
