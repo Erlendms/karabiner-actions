@@ -3,7 +3,7 @@
 Here are some [Karabiner-element](https://karabiner-elements.pqrs.org/) actions I've put together.
 I've done it with the wonderful tool [Karabiner.ts](https://github.com/evan-liu/karabiner.ts), and [my index.ts file](my-index.ts) is in this repo, if you want to check it out.
 
-## Tabe of Contents
+## Tabel of Contents
 
 - [How to add to Karabiner](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#how-to-add-to-karabiner)
 - [Meh key](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#meh-key)
