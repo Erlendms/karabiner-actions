@@ -36,10 +36,12 @@ writeToProfile(
   "Erlend",
   [
     rule("Caps + Quote -> Hyper").manipulators([
-      map("⇪").toHyper(),
       map("⇪")
         .toIfAlone("⇪", {}, { halt: true })
-        .toDelayedAction(toKey("vk_none"), toKey("l⇧", "l⌘⌥⌃"))
+        .toDelayedAction(
+          toKey("vk_none"),
+          toStickyModifier("left_shift", "toggle"),
+        )
         .toIfHeldDown("l⇧", "l⌘⌥⌃", { halt: true }),
       map("'")
         .toIfAlone("'", {}, { halt: true })
@@ -64,11 +66,8 @@ writeToProfile(
       // One - left hand
       map("a")
         .toIfAlone("a", {}, { halt: true })
-        .toDelayedAction(
-          toKey("vk_none"),
-          toStickyModifier("left_shift", "toggle"),
-        )
-        .toIfHeldDown("l⇧", {}, { halt: true }),
+        .toIfHeldDown("l⇧", {}, { halt: true })
+        .toDelayedAction(toKey("vk_none"), toKey("a")),
       map("s")
         .toIfAlone("s", {}, { halt: true })
         .toDelayedAction(toKey("vk_none"), toKey("s"))
@@ -79,7 +78,7 @@ writeToProfile(
         .toIfHeldDown("l⌥", {}, { halt: true }),
       map("f")
         .toIfAlone("f", {}, { halt: true })
-        .toDelayedAction(toKey("vk_none"), toKey("f"))
+        .toDelayedAction(toKey("vk_none"), toKey("f", {}, { halt: true }))
         .toIfHeldDown("l⌘", {}, { halt: true }),
       //
       // Four - right hand

@@ -3,7 +3,7 @@
 Here are some [Karabiner-element](https://karabiner-elements.pqrs.org/) actions I've put together.
 I've done it with the wonderful tool [Karabiner.ts](https://github.com/evan-liu/karabiner.ts), and [my index.ts file](my-index.ts) is in this repo, if you want to check it out.
 
-## Tabel of Contents
+## Table of Contents
 
 - [How to add to Karabiner](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#how-to-add-to-karabiner)
 - [Meh key](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#meh-key)
@@ -60,7 +60,7 @@ While testing, it could be a good idea to use Karabiner's EventViewer. 👇🏻
 The most important one for me, is having `Caps Lock`, and `Quote` (`Æ` on Norwegian keyboards) become the **Hyper key**. That means all four of `Shift+Control+Option+Command`. No apps use this for hotkeys, so you can always make them your own.
 
 - I have [one version](actions/no-caps_quote-hyper.json) that makes `Caps Lock` _always_ be Hyper, and `Quote` be hyper if you hold it longer than your to_if_held_down_threshold,
-- and [another version](actions/caps_quote-hyper.json) that keeps `Caps Lock`'s function if it's clicked alone (unless held for more than 300 ms).
+- and [another version](actions/caps_quote-hyper.json) that keeps `Caps Lock`'s function if it's clicked alone _and_ under your threshold.
 
 ## Home row mods
 
@@ -87,7 +87,15 @@ I have [one version](actions/home_row_mods-ct_o_s_c.json), where:
 - F -> Command
 - ... and mirrored on the other hand.
 
-But I have two versions with the same order as regular keyboards, so:
+And [one version](actions/home_row_mods-ct_o_c_s.json) where:
+
+- A -> Control
+- S -> Option
+- D -> Command
+- F -> Shift
+- ... and mirrored on the other hand.
+
+But I have _two_ versions with the same order as regular keyboards, so:
 
 - A -> Shift
 - S -> Control
