@@ -11,6 +11,7 @@ I've done it with the wonderful tool [Karabiner.ts](https://github.com/evan-liu/
   - [Finding your threshold](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#you-should-find-the-threshold-that-works-for-you)
   - [Meh actions](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#meh-actions)
 - [Hyper key](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#hyper-key)
+- [Nordic Markdown Helper](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#nordic-markdown-helper)
 - [Home row mods](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#home-row-mods)
   - [Pros and cons vs QMK/ZMK](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#pros-and-cons-vs-qmkzmk)
   - [Home row actions](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#home-row-actions)
@@ -64,15 +65,17 @@ The most important one for me, is having `Caps Lock`, and `Quote` (`Æ` on Norwe
 
 ## Nordic Markdown Helper
 
-Typing \_ and \* requiers modifiers on (at least) Nordic keyboard layouts. So [this little action](actions/nordic_markdown_helpers.json) is designed to make typing those easier.
+Typing \_ and \* requiers modifiers on (at least) Nordic keyboard layouts. So [this little action](actions/nordic_markdown_helper.json) is designed to make typing those easier.
 
-(PS: I'm team single underscore for italics and double asterisks for bold. 💪🏻)
+(PS: I'm _Team Single Underscore for Italics and Double Asterisks for Bold_. 💪🏻)
 
 We don't use the key to make `¨` often, as we have designated letter keys for Æ Ø Å / Ä Ö Å. So, I've sacrificed it to do this instead:
 
 - **On tap**: `_`
 - **On hold**: `**`
-- **With `Shift` + `Option`** _or_ `Meh`: Regular function
+- **With Shift + Option _or_ Meh**: Regular unmodified function
+
+Using the key with modifiers works like normal.
 
 ## Home row mods
 
