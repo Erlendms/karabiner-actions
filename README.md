@@ -62,6 +62,18 @@ The most important one for me, is having `Caps Lock`, and `Quote` (`Æ` on Norwe
 - I have [one version](actions/no-caps_quote-hyper.json) that makes `Caps Lock` _always_ be Hyper, and `Quote` be hyper if you hold it longer than your to_if_held_down_threshold,
 - and [another version](actions/caps_quote-hyper.json) that keeps `Caps Lock`'s function if it's clicked alone _and_ under your threshold.
 
+## Nordic Markdown Helper
+
+Typing \_ and \* requiers modifiers on (at least) Nordic keyboard layouts. So [this little action](actions/nordic_markdown_helpers.json) is designed to make typing those easier.
+
+(PS: I'm team single underscore for italics and double asterisks for bold. 💪🏻)
+
+We don't use the key to make `¨` often, as we have designated letter keys for Æ Ø Å / Ä Ö Å. So, I've sacrificed it to do this instead:
+
+- **On tap**: `_`
+- **On hold**: `**`
+- **With `Shift` + `Option`** _or_ `Meh`: Regular function
+
 ## Home row mods
 
 There's an [excellent guide here](https://precondition.github.io/home-row-mods), with tons of information and usage tips. But the gist of it, is that the keys on the home row (usually `A`, `S`, `D`, `F` and `J`, `K`, `L`, `semicolon`) becomes modifiers (like shift and control) when held down.

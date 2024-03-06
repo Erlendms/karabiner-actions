@@ -1,0 +1,71 @@
+{
+  "description": "Nordic Markdown Helper",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "close_bracket"
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "slash",
+            "modifiers": ["shift"]
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "slash",
+          "modifiers": ["shift"]
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "backslash",
+          "modifiers": ["shift"]
+        },
+        {
+          "halt": true,
+          "key_code": "backslash",
+          "modifiers": ["shift"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "close_bracket",
+        "modifiers": {
+          "mandatory": ["option", "control", "shift"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "close_bracket"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "close_bracket",
+        "modifiers": {
+          "mandatory": ["option", "shift"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "close_bracket"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
