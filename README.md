@@ -11,6 +11,7 @@ I've done it with the wonderful tool [Karabiner.ts](https://github.com/evan-liu/
   - [Finding your threshold](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#you-should-find-the-threshold-that-works-for-you)
   - [Meh actions](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#meh-actions)
 - [Hyper key](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#hyper-key)
+- [Turbo Arrows](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#turbo-arrows)
 - [Nordic Markdown Helper](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#nordic-markdown-helper)
 - [Home row mods](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#home-row-mods)
   - [Pros and cons vs QMK/ZMK](https://github.com/Erlendms/karabiner-actions?tab=readme-ov-file#pros-and-cons-vs-qmkzmk)
@@ -65,7 +66,7 @@ The most important one for me, is having `Caps Lock`, and `Quote` (`Æ` on Norwe
 
 ## Turbo Arrows
 
-What if you're a filthy pleb who don't know [vim motions](https://vim.rtorr.com/), but still want to move slighlty faster with arrow keys?
+What if you're a filthy pleb, like me, who don't know [vim motions](https://vim.rtorr.com/), but still want to move slighlty faster with the arrow keys?
 
 Doing Command/Option + Arrows works great when going left to right, but not so much up and down. So, I present to you, my latest "invention": [**_Turbo Arrows_**](actions/meh_5_arrows-hyper_10_arrows.json)
 
