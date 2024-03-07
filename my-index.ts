@@ -81,7 +81,14 @@ writeToProfile(
         .toIfAlone("d")
         .toIfAlone("a")
         .toIfHeldDown("l⇧", "l⌥"),
-      mapSimultaneous(["a", "f"]).toIfHeldDown("l⇧", "l⌘"),
+      mapSimultaneous(["a", "f"], { key_down_order: "strict" })
+        .toIfAlone("a")
+        .toIfAlone("f")
+        .toIfHeldDown("l⇧", "l⌘"),
+      mapSimultaneous(["f", "a"], { key_down_order: "strict" })
+        .toIfAlone("f")
+        .toIfAlone("a")
+        .toIfHeldDown("l⇧", "l⌘"),
       mapSimultaneous(["s", "d"], { key_down_order: "strict" })
         .toIfAlone("s")
         .toIfAlone("d")
@@ -110,8 +117,8 @@ writeToProfile(
       // One - left hand
       map("a")
         .toIfAlone("a", {}, { halt: true })
-        .toIfHeldDown("l⇧", {}, { halt: true })
-        .toDelayedAction(toKey("vk_none"), toKey("a")),
+        .toDelayedAction(toKey("vk_none"), toKey("a"))
+        .toIfHeldDown("l⇧", {}, { halt: true }),
       map("s")
         .toIfAlone("s", {}, { halt: true })
         .toDelayedAction(toKey("vk_none"), toKey("s"))
@@ -183,24 +190,26 @@ writeToProfile(
         .toIfAlone("j")
         .toIfAlone("k")
         .toIfHeldDown("r⌥", "r⌘"),
+      //
       // One - right hand
-      map("j")
-        .toIfAlone("j", {}, { halt: true })
-        .toDelayedAction(toKey("vk_none"), toKey("j"))
-        .toIfHeldDown("r⌘", {}, { halt: true }),
-      map("k")
-        .toIfAlone("k", {}, { halt: true })
-        .toDelayedAction(toKey("vk_none"), toKey("k"))
-        .toIfHeldDown("r⌥", {}, { halt: true }),
-      map("l")
-        .toIfAlone("l", {}, { halt: true })
-        .toDelayedAction(toKey("vk_none"), toKey("l"))
-        .toIfHeldDown("r⌃", {}, { halt: true }),
       map(";")
         .toIfAlone(";", {}, { halt: true })
         .toDelayedAction(toKey("vk_none"), toKey(";"))
         .toIfHeldDown("r⇧", {}, { halt: true }),
+      map("l")
+        .toIfAlone("l", {}, { halt: true })
+        .toDelayedAction(toKey("vk_none"), toKey("l"))
+        .toIfHeldDown("r⌃", {}, { halt: true }),
+      map("k")
+        .toIfAlone("k", {}, { halt: true })
+        .toDelayedAction(toKey("vk_none"), toKey("k"))
+        .toIfHeldDown("r⌥", {}, { halt: true }),
+      map("j")
+        .toIfAlone("j", {}, { halt: true })
+        .toDelayedAction(toKey("vk_none"), toKey("j"))
+        .toIfHeldDown("r⌘", {}, { halt: true }),
     ]),
+    //
     // Meh
     rule("R_U = Meh ").manipulators([
       map("r")
@@ -213,6 +222,69 @@ writeToProfile(
         .toDelayedAction(toKey("vk_none"), toKey("u"))
         .toIfHeldDown("r⇧", "r⌥⌃", { halt: true })
         .parameters({ "basic.to_if_held_down_threshold_milliseconds": 220 }),
+    ]),
+    //
+    // Norwegian Markdown helper
+    rule("Nordic Markdown Helper").manipulators([
+      map("]")
+        .toIfAlone("/", "⇧", { halt: true })
+        .toDelayedAction(toNone(), toKey("/", "⇧"))
+        .toIfHeldDown("\\", "⇧", { halt: true })
+        .toIfHeldDown("\\", "⇧", { halt: true }),
+      map("]", "Meh").to("]"),
+      map("]", "⌥⇧").to("]"),
+    ]),
+    //
+    // More arrow clicks
+    rule("Meh + Arrow = 5 Arrows | Hyper + Arrow = 10 Arrows").manipulators([
+      map("↑", "Meh").to("↑").to("↑").to("↑").to("↑").to("↑"),
+      map("↓", "Meh").to("↓").to("↓").to("↓").to("↓").to("↓"),
+      map("←", "Meh").to("←").to("←").to("←").to("←").to("←"),
+      map("→", "Meh").to("→").to("→").to("→").to("→").to("→"),
+      map("↑", "Hyper")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑")
+        .to("↑"),
+      map("↓", "Hyper")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓")
+        .to("↓"),
+      map("←", "Hyper")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←")
+        .to("←"),
+      map("→", "Hyper")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→")
+        .to("→"),
     ]),
   ],
   {

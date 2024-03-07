@@ -63,6 +63,14 @@ The most important one for me, is having `Caps Lock`, and `Quote` (`Æ` on Norwe
 - I have [one version](actions/no-caps_quote-hyper.json) that makes `Caps Lock` _always_ be Hyper, and `Quote` be hyper if you hold it longer than your to_if_held_down_threshold,
 - and [another version](actions/caps_quote-hyper.json) that keeps `Caps Lock`'s function if it's clicked alone _and_ under your threshold.
 
+## Turbo Arrows
+
+What if you're a filthy pleb who don't know [vim motions](https://vim.rtorr.com/), but still want to move slighlty faster with arrow keys?
+
+Doing Command/Option + Arrows works great when going left to right, but not so much up and down. So, I present to you, my latest "invention": [**_Turbo Arrows_**](actions/meh_5_arrows-hyper_10_arrows.json)
+
+If you hold the Meh key and git an arrow, it does 5 arrow clicks. And if you hold Hyper, it does 10. (I'll mostly be using it for _up_ and _down_, but I added _left_ and _right_ as well.)
+
 ## Nordic Markdown Helper
 
 Typing \_ and \* requiers modifiers on (at least) Nordic keyboard layouts. So [this little action](actions/nordic_markdown_helper.json) is designed to make typing those easier.
